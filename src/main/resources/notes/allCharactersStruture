@@ -1,0 +1,41 @@
+object		{7}
+    code	:	200
+    status	:	Ok
+    copyright	:	© 2021 MARVEL
+    attributionText	:	Data provided by Marvel. © 2021 MARVEL
+    attributionHTML	:	<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>
+    etag	:	80e3d072478864bc5e4449f2f8caef692c931e5c
+    data		{5}
+        offset	:	0
+        limit	:	20
+        total	:	1493
+        count	:	20
+        results		[20]
+            0		{11}
+                id	:	1011334
+                name	:	3-D Man
+                description	:
+                modified	:	2014-04-29T14:18:17-0400
+                    thumbnail		{2}
+                        path	:	http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784
+                        extension	:	jpg
+                resourceURI	:	http://gateway.marvel.com/v1/public/characters/1011334
+                comics		{4}
+                series		{4}
+                stories		{4}
+                events		{4}
+                urls		[3]
+            1		{11}
+                id	:	1017100
+                name	:	A-Bomb (HAS)
+                description	:	Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb's thick, armored skin is just as strong and powerful as it is blue. And when he curls into action, he uses it like a giant bowling ball of destruction!
+                modified	:	2013-09-18T15:54:04-0400
+                    thumbnail		{2}
+                        path	:	http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16
+                        extension	:	jpg
+                resourceURI	:	http://gateway.marvel.com/v1/public/characters/1017100
+                comics		{4}
+                series		{4}
+                stories		{4}
+                events		{4}
+                urls		[2]

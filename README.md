@@ -1,7 +1,7 @@
 ### Marvel-API
 
 Prerequisites
-    - Update path in CharactersGenerator.java e.g. "C:\\Users\\Sandesh\\Documents\\projects\\api\\marvel\\src\\main\\resources\\characters\\"
+    - Update path in CharactersGenerator.java e.g. "C:\\api\\marvel\\src\\main\\resources\\characters\\"
     - Update FILE_UPLOAD_DIRECTORY in application.properties
     - Run CharactersGenerator.java
     - We run this to fetch all the characters' ids available

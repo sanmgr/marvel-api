@@ -6,7 +6,6 @@ import com.yapily.project.marvel.model.Response;
 import com.yapily.project.marvel.service.MarvelWebService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.PropertySource;
 
 import java.io.File;
 import java.io.IOException;
@@ -49,8 +48,17 @@ public class CharactersGenerator {
         try {
             File directory = new File(path);
             // If there are any files already in this directory then remove it so that we can have fresh copy
+
+            if (!directory.exists()) {
+                LOG.info("Create directory :{}", path);
+                directory.mkdir();
+            } else {
+                LOG.info("Directory already exist {}", path);
+            }
+
             if (directory.isDirectory()) {
                 if (directory.list().length > 0) {
+                    LOG.info("Found some files, deleting it now.");
                     deleteDir(directory);
                 }
                 LOG.info("Saving characters1To100");

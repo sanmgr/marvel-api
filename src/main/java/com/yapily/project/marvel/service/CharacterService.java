@@ -1,6 +1,7 @@
 package com.yapily.project.marvel.service;
 
 import com.yapily.project.marvel.api.IController;
+import com.yapily.project.marvel.exception.DataNotFoundApiException;
 import com.yapily.project.marvel.model.Character;
 import com.yapily.project.marvel.model.Response;
 import com.yapily.project.marvel.util.CharacterJsonParser;
@@ -45,7 +46,7 @@ public class CharacterService implements IController {
     public Response getCharacter(final int characterId) {
         final String url = marvelCharactersUri + "/" + characterId;
         Response response = marvelWebService.exchange(url, null, null);
-        if (response.getHttpStatus() == HttpStatus.OK) {
+        if (response.getHttpStatus().is2xxSuccessful()) {
             Character character = characterJsonParser.getActualSingleCharacter(response.getMessage());
             return new Response(character, response.getHttpStatus(), HttpStatus.OK.series().toString());
         }
